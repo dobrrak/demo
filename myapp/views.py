@@ -9,5 +9,10 @@ def todos(request):
     return render(request, "todos.html", { "todos": items})
 
 def cv(request):
-    pages = [1, 2, 3, 4, 5, 6]
-    return render(request, "cv.html", {"pages": pages})
+
+    paths = []
+    for index in range(1,7):
+        paths.append("resume/content" + str(index) + ".html")
+    
+
+    return render(request, "cv.html", {"paths": paths})

@@ -3,6 +3,17 @@
 {% block content %}
 
     <h1>CV</h1>
-    {% include "resume/index.html" %}    
+
+    <article class="page">
+
+        {% for path in paths %}
+            {% include path %}
+            <footer>
+              <strong>page {{ path }}</strong>
+            </footer>
+        {% endfor %}
+      
+      </article>
+      
 
 {% endblock content %}
