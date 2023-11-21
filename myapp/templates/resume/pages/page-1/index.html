@@ -1,9 +1,9 @@
 <article class="page">
-  ${require('./header.html')}
-  ${require('./info.html')}
-  ${require('./content.html')}
+  {% include "resume/pages/page-1/header.html" %}
+  {% comment %} {% include "resume/info.html" %} {% endcomment %}
+  {% comment %} {% include "resume/content.html" %} {% endcomment %}
 
   <footer>
-    <strong>I</strong>
+    <strong>page I</strong>
   </footer>
 </article>
