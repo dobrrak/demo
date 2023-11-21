@@ -9,6 +9,9 @@
     <script src='main.js'></script>
 </head>
 <body>
+    {% load django_browser_reload %}
     <div class="containter">{% block content %} {% endblock %}</div>
+    {% django_browser_reload_script %}
+  </body>
 </body>
 </html>
