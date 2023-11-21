@@ -2,11 +2,7 @@
 
 {% block content %}
 
-{% for index in pages %}
-    {% with url="resume/pages/page-"|add:index|add:"/index.html" %}
-        <h1>CV page {{ index }}</h1>
-        {% include url %}    
-    {% endwith %}
-{% endfor %}
+    <h1>CV</h1>
+    {% include "resume/index.html" %}    
 
 {% endblock content %}
